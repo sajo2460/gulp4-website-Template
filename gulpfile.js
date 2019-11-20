@@ -1,7 +1,13 @@
 const {src, dest, series} = require('gulp');
+const del = require('del');
 const origin = 'src';
 const destination = 'build';
 
+
+async function clean(cb) {
+  await del(destination);
+  cb();
+}
 //defaultTask as html
 function html(cb) {
     // place code for your default task here
@@ -24,4 +30,4 @@ function js(cb) {
   cb();
 }
 
-exports.default = series(html, css, js);
+exports.default = series(clean, html, css, js);
