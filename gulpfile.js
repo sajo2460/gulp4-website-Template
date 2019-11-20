@@ -23,8 +23,5 @@ function js(cb) {
   ]).pipe(dest(`${destination}/js`))
   cb();
 }
-exports.html = html;
-exports.css = css;
-exports.js = js;
 
 exports.default = series(html, css, js);
