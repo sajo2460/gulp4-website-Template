@@ -1,4 +1,4 @@
-const {src, dest, series} = require('gulp');
+const {src, dest, series,parallel} = require('gulp');
 const del = require('del');
 const origin = 'src';
 const destination = 'build';
@@ -30,4 +30,4 @@ function js(cb) {
   cb();
 }
 
-exports.default = series(clean, html, css, js);
+exports.default = series(clean, parallel( html, css, js));
