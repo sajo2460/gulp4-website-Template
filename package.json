@@ -1,0 +1,22 @@
+{
+  "name": "gulp4-website-template",
+  "version": "1.0.0",
+  "description": "This is a Gulp 4 Website Template with sass and bootstrap.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajo2460/gulp4-website-Template.git"
+  },
+  "author": "Joseph Safari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajo2460/gulp4-website-Template/issues"
+  },
+  "homepage": "https://github.com/sajo2460/gulp4-website-Template#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
